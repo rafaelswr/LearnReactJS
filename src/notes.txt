@@ -1,0 +1,6 @@
+ -> React Code is just JS code, with some
+funcionalities of react like useState, useEffect and so on;
+ -> Code is tranformed (through NPM) before it sended to browser
+to make more user friendly and for that we can have html code(JSX) inside JS functions;
+ -> A component in react it is just an JS function
+ 
