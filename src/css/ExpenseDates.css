@@ -1,0 +1,16 @@
+.principal{
+    border: 1px solid white;
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(65, 65, 65);
+    padding: 1rem;
+    text-align: center;
+    width: 90px;
+}
+.day{
+    font-size: 2rem;
+}.month{
+
+}.year{
+    font-size: 0.75rem;
+}

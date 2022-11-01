@@ -1,12 +1,49 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 0.7rem;
+  flex: 1;
+  align-items: center;
+  margin: 1rem 0;
+  border-radius: 12px;
+  background-color:#f8e9b7;
+}
+
+.blocos{ 
+  width: 100px auto; 
+  height: 123px;
+}
+.blocDate{
+  flex: 1;
+}
+
+.blocTitle{
+  flex: 5;
+  padding-left: 10px;
+  color: black;
+  padding-top: 25px;
+  font-size: 1.1rem
+}
+
+
+.blocPrice{
+  flex: 4;
+  padding-top: 25px;
+
+  padding-left: 10px;
+}
+
+
 .expense-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    padding: 0.5rem;
+    padding: 0.7rem;
     margin: 1rem 0;
     border-radius: 12px;
-    background-color: #4b4b4b;
+    background-color:#f8e9b7;
   }
   
   .expense-item__description {
@@ -24,14 +61,15 @@
     font-size: 1rem;
     flex: 1;
     margin: 0 1rem;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   .expense-item__price {
     font-size: 1rem;
+    
     font-weight: bold;
     color: white;
-    background-color: #40005d;
+    background-color: #1b7689;
     border: 1px solid white;
     padding: 0.5rem;
     border-radius: 12px;

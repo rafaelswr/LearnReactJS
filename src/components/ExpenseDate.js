@@ -1,14 +1,21 @@
 import React from "react";
-
-const ExpenseDate= ()=>{
-    const todayDate = new Date();
-    const day = todayDate.getDate(); 
-    const month = todayDate.toLocaleDateString("pt-PT",{month:"long"});
-    const year = todayDate.getFullYear();
+import "../css/ExpenseDates.css";
+const ExpenseDate= ({date})=>{
+    const day = date.getDate(); 
+    const month = date.toLocaleDateString("pt-PT",{month:"long"});
+    const year = date.getFullYear();
 
     return (
-        <div>
-            {day+"/"+month+"/"+year}
+        <div className="principal">
+            <div className="day">
+                { day}
+            </div>
+            <div className="month">
+               { month}
+            </div>
+            <div className="year">
+                {year}
+            </div>
         </div>
     );
 }

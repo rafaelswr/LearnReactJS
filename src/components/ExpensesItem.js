@@ -2,18 +2,29 @@ import React from "react";
 import "../css/ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
 
-const ExpenseItem = ({expenses}) => {
-    const title = "Car Insurance";
-    const expenseAmount = 298.12;
+const ExpenseItem = (props) => {
+
     return(
         <div>  
             {  
-                expenses.map(element => {
+                props.expenses.map(element => {
                     return(
-                        <div className="expense-item" > 
-                            <ExpenseDate></ExpenseDate>
-                            <div className="expense-item__description">
+                       /* <div className="expense-item" > 
+                                <ExpenseDate date={element.date}></ExpenseDate>
+                                <div className="expense-item__description">
+                                    <h2>{element.title}</h2>
+                                    <div className="expense-item__price">${element.amount}</div>
+                                </div>
+                        </div>
+                        */
+                        <div className="container" > 
+                            <div className="blocos blocDate">
+                                <ExpenseDate date={element.date}></ExpenseDate>
+                            </div>
+                            <div className="blocos blocTitle">
                                 <h2>{element.title}</h2>
+                            </div>
+                            <div>
                                 <div className="expense-item__price">${element.amount}</div>
                             </div>
                         </div>
